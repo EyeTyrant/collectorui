@@ -1,0 +1,71 @@
+<!-- DIECAST DIALOG FORM -->
+<div class="container">
+<mat-toolbar>
+
+  <div>
+    <h2 mat-dialog-title>{{inputForm.controls['id'].value ? "Edit Item" : "Add New Item"}}</h2>
+  </div>
+  <span class="fill-space"></span>
+  <div>
+    <button mat-icon-button class="mat-dialog-close" tabIndex="-1">
+      <mat-icon (click)="onClose()">cancel</mat-icon>
+    </button>
+  </div>
+    
+  </mat-toolbar>
+</div>
+
+
+<div class="container">
+  <form [formGroup]="inputForm" (ngSubmit)="onSubmit(inputForm.value)" class="inputForm">
+
+    <mat-dialog-content>
+      
+      <mat-grid-list cols="2" rowHeight="130" gutterSize="5px">
+
+        <mat-grid-tile>
+          <div class="container">
+            <mat-form-field>
+              <!-- <mat-label>Release Year</mat-label> -->
+              <input matInput formControlName="year" class="form=control" placeholder="Release Year">
+            </mat-form-field>
+        
+            <mat-form-field>
+              <!-- <mat-label>Name</mat-label> -->
+              <input matInput formControlName="name" class="form=control" placeholder="Name">
+            </mat-form-field>
+          <!-- <br /> -->
+          <!-- {{ inputForm.value | json }} -->
+          </div>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+          <div class="container">
+            <mat-form-field>
+              <!-- <mat-label>Brand</mat-label> -->
+              <input matInput formControlName="brand" class="form=control" placeholder="Brand">
+            </mat-form-field>
+        
+            <mat-form-field>
+              <!-- <mat-label>Manufacturer</mat-label> -->
+              <input matInput formControlName="mfr" class="form=control" placeholder="Manufacturer">
+            </mat-form-field>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="2">
+          <div>
+            <mat-dialog-actions>
+              <button mat-raised-button mat-dialog-close class="btn-add text-white" style="width : 400px;" type="submit">Submit</button>
+            </mat-dialog-actions>
+          </div>
+        </mat-grid-tile>
+
+      </mat-grid-list>
+
+    </mat-dialog-content>
+  </form>
+</div>
+
+<!-- <div style="text-align:center">
+  <app-input></app-input>
+</div> -->

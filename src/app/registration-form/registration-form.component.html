@@ -1,0 +1,75 @@
+<!-- REGISTRATION DIALOG FORM -->
+
+
+<!-- REGISTRATION-FORM DIALOG TOOLBAR -->
+<div class="container dial">
+  <mat-toolbar>
+
+    <div>
+      <h2 mat-dialog-title>Registration</h2>
+    </div>
+    <span class="fill-space"></span>
+    <div>
+      <button mat-icon-button class="mat-dialog-close" tabindex="-1">
+        <mat-icon (click)="onClose()">cancel</mat-icon>
+      </button>
+    </div>
+
+  </mat-toolbar>
+</div>
+
+<!-- REGISTRATION-FORM INPUTS -->
+<div class="container dial">
+  <form autocomplete="off" [formGroup]="regForm" (ngSubmit)="onRegistrationSubmit(regForm.value)" class="regForm">
+    <mat-dialog-content>
+
+      <mat-grid-list cols="2" rowHeight="70" gutterSize="5px">
+
+        <mat-grid-tile>
+          <!-- <div class="container"> -->
+          <mat-form-field>
+            <input matInput formControlName="firstName" class="form=control" placeholder="First Name">
+          </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+          <mat-form-field>
+            <input matInput formControlName="lastName" class="form=control" placeholder="Last Name">
+          </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+          <mat-form-field>
+            <input matInput formControlName="userName" class="form=control"   placeholder="User Name">
+          </mat-form-field>
+        <!-- </div> -->
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+        <!-- <div class="container"> -->
+          <mat-form-field>
+            <input matInput formControlName="password" class="form=control" placeholder="Password">
+          </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+          <mat-form-field>
+            <input matInput formControlName="verifyPassword" class="form=control" placeholder="Verify Password">
+          </mat-form-field>
+        <!-- </div> -->
+        </mat-grid-tile>
+
+        <!-- REGISTRATION-FORM SUBMIT BUTTON -->
+        <mat-grid-tile colspan="2">
+        <!-- <div> -->
+          <mat-dialog-actions>
+            <button mat-raised-button mat-dialog-close class="btn-reg" style="width : 400px;" type="submit">Submit</button>
+          </mat-dialog-actions>
+        <!-- </div> -->
+        </mat-grid-tile>
+
+      </mat-grid-list>
+
+    </mat-dialog-content>
+  </form>
+</div>

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+#dieCastBgImg {
+  background-image: url("../../assets/img/lotus.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+}
+
+#dieCastBgImg nav {
+  /* background-color: #f86e03; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* height: 40px; */
+  margin-top: 35px;
+  /* align-items: center; */
+}
+
+#title {
+  font-size: 3em;
+  /* color: #343a40; */
+  color: var(--hot-orange);
+}
+
+/* :VISITED MUST COME BEFORE HOVER i.e. STATE ORDER :LINK :VISITED :HOVER :ACTIVE */
+#navBar a:visited {
+  color: var(--hot-charcoal) !important;
+}
+
+#navBar a:hover {
+  color: var(--hot-orange) !important;
+}
+
+/* KEEPS POINTER WHEN HOVERING LINK THAT ACTS AS A BUTTON (CLICK)="EVENT()" */
+#navBar a,
+a label {
+  cursor: pointer;
+}
+
+/* .reg-dialog .mat-dialog-container {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+} */
+/* input:-internal-autofill-selected {
+  background-color: var(--trans-black5) !important;
+  color: white !important;
+} */

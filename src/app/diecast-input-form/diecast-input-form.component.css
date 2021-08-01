@@ -1,0 +1,21 @@
+/* INPUT DIALOG TOOLBAR (TITLE AND CLOSE BUTTON) */
+.mat-toolbar {
+  display: flex;
+  margin: 0px 0px 20px 0px;
+  background-color: var(--white);
+}
+
+.fill-space {
+  flex: 1 1 auto;
+}
+
+/* COLOR OF SUBMIT BUTTON */
+.btn-add {
+  background-color: var(--hot-orange);
+  /* font-weight: bold; */
+}
+
+.btn-add:hover {
+  color: var(--hot-blue) !important;
+  background-color: var(--hot-yellow);
+}

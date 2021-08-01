@@ -1,0 +1,139 @@
+/* DIV CONTAINING PAGE TITLE, BUTTON, AND SEARCH */
+/* .list-head {
+  text-align: center;
+  margin-top: 10px;
+} */
+
+/* H2 "TITLE" FOR PAGE */
+h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* DISPLAY LIST TOOLBAR (ADD BUTTON AND SEARCH INPUT) */
+.mat-toolbar {
+  display: flex;
+  /* margin-bottom: 10px; */
+  background-color: var(--white);
+  text-align: center;
+}
+
+.mat-toolbar .mat-input-element {
+  caret-color: var(--hot-blue);
+}
+
+/* BOOTSTRAP TABLE */
+.table-head {
+  color: var(--hot-orange);
+  font-size: 1.1rem;
+  font-weight: bold;
+  /* background-color: #ff5100; */
+}
+
+/* COLOR OF "ADD NEW ITEM" BUTTON */
+.btn-add {
+  background-color: var(--hot-orange);
+  /* font-weight: bold; */
+}
+
+.btn-add:hover {
+  color: var(--hot-blue) !important;
+  background-color: var(--hot-yellow);
+}
+
+/* TABLE ROW BACKGROUND COLOR ON HOVER */
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  color: var(--hot-blue);
+  /* background-color: #f8cb04; */
+  /* font-weight: 600; */
+}
+
+/* ANGULAR MATERIAL TABLE */
+mat-header-cell,
+mat-cell {
+  justify-content: center;
+  width: fit-content;
+}
+
+.mat-btn-icon,
+.mat-btn-icon a,
+.mat-btn-edit {
+  color: var(--hot-orange);
+}
+
+.mat-btn-icon:hover,
+.mat-btn-icon a:hover,
+.mat-btn-edit:hover {
+  text-decoration: none;
+  color: var(--hot-blue) !important;
+}
+
+.mat-row:hover {
+  background-color: var(--hot-blue-tint);
+  font-weight: bold;
+  color: var(--hot-blue) !important;
+}
+
+
+/* CUSTOM COLOR OF PLACEHOLDER LABEL */
+::ng-deep .mat-form-field-empty.mat-form-field-label {
+  color: var(--hot-orange);
+}
+
+/* CUSTOM COLOR OF INPUT CARET */
+::ng-deep .mat-input-element {
+  caret-color: var(--hot-blue);
+}
+
+/* CUSTOM COLOR OF INPUT UNDERLINE */
+::ng-deep .mat-form-field-underline {
+  background-color: var(--hot-orange) !important;
+}
+
+/* CUSTOM COLOR OF LABEL WHEN FILLED AND NOT FOCUSED */
+::ng-deep .mat-form-field-label {
+  color: var(--hot-orange) !important;
+}
+
+/* CHANGE COLOR OF LABEL ON FOCUS*/
+::ng-deep .mat-focused .mat-form-field-label {
+  color: var(--hot-blue) !important;
+}
+
+/* CHANGE COLOR OF INPUT UNDERLINE WHEN FOCUSED */
+::ng-deep .mat-form-field-ripple {
+  background-color: var(--hot-blue) !important;
+}
+
+
+
+
+/* .mat-column-Actions {
+  flex: 0 0 100px !important;
+  white-space: unset !important;
+} */
+
+/* .table-body {
+  background-color: #ff5e00;
+} */
+
+/* .table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #ff7300;
+} */
+
+/* delete button colors */
+/* .btn-delete {
+  background-color: #ff5100;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.btn-delete:hover {
+  color: #0051ff !important;
+  border-color: #0051ff;
+  font-weight: bold;
+  color: #f8cb04 !important;
+  background-color: #f8cb04;
+} */

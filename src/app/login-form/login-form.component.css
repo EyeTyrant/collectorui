@@ -1,0 +1,102 @@
+/* DIALOG BOX */
+.login-dialog .mat-dialog-container {
+  background-color: var(--trans-black5) !important;
+  box-shadow: 8px 8px 50px var(--hot-silver);
+}
+
+/* BACKDROP CLASS WHEN DIALOG BOX IS OPEN */
+.login-dialog-backdrop {
+  background-color: var(--trans-black8) !important;
+}
+
+
+/* INPUT DIALOG TOOLBAR (TITLE AND CLOSE BUTTON) */
+.login-dialog .mat-toolbar {
+  display: flex;
+  margin: 0px 0px 20px 0px;
+  background-color: transparent;
+  color: var(--hot-light-silver);
+}
+
+.fill-space {
+  flex: 1 1 auto;
+}
+
+/* DIALOG TOOLBAR */
+::ng-deep .mat-toolbar {
+  background-color: transparent !important;
+}
+
+/* DIALOG CLOSE BUTTON ICON */
+.login-dialog .mat-icon {
+  color: var(--hot-light-silver);
+}
+
+/* COLOR OF SUBMIT BUTTON */
+.login-dialog .btn-login {
+  background-color: transparent;
+  /* background-color: var(--black); */
+  /* font-weight: bold; */
+  color: var(--hot-light-silver);
+  box-shadow: 1px 1px 10px var(--hot-silver);
+
+}
+
+.btn-login:hover {
+  background-color: var(--hot-light-silver);
+  color: var(--black) !important;
+  box-shadow: 1.5px 1.5px 15px var(--hot-silver);
+}
+
+/* .login-dialog .mat-form-field-infix {
+  background-color: rgba(192, 192, 192, 0.05) !important;
+  box-shadow: 1px 1px 10px var(--hot-silver);
+} */
+
+
+/* CUSTOM COLOR OF PLACEHOLDER LABEL */
+.login-dialog .mat-form-field-empty.mat-form-field-label {
+  color: var(--hot-silver);
+}
+
+/* CUSTOM COLOR OF INPUT CARET */
+.login-dialog .mat-input-element {
+  caret-color: var(--hot-orange);
+  color: var(--white);
+}
+
+/* THIS WILL DELAY CHROME'S USER AGENT STYLESHEET FROM CHANGING THE BACKGROUND AND TEXT WHEN AN INPUT IS SELECTED USING AUTOCOMPLETE */
+/* ALTERNATE SOLUTION - USING AUTOCOMPLETE="OFF" IN THE FORM TAG */
+.login-dialog input:-webkit-autofill,
+/* .login-dialog input:-webkit-autofill:hover, */
+.login-dialog input:-webkit-autofill:focus,
+.login-dialog input:-webkit-autofill:active {
+  transition-delay: 50000s;
+  -webkit-text-fill-color: var(--white) !important;
+}
+
+/* CHROME BROWSER BUG - DIRECTLY SETTING THE STYLES DOES NOT WORK */
+/* input:-webkit-autofill:active {
+  background: var(--trans-black5) !important;
+  color: var(--white) !important;
+} */
+
+/* CUSTOM COLOR OF INPUT UNDERLINE */
+.login-dialog .mat-form-field-underline {
+  background-color: var(--hot-silver) !important;
+}
+
+/* CUSTOM COLOR OF LABEL WHEN FILLED AND NOT FOCUSED */
+.login-dialog .mat-form-field-label {
+  color: var(--hot-silver) !important;
+}
+
+/* CHANGE COLOR OF LABEL ON FOCUS*/
+.login-dialog .mat-focused .mat-form-field-label {
+  color: var(--hot-orange) !important;
+}
+
+/* CHANGE COLOR OF INPUT UNDERLINE WHEN FOCUSED */
+.login-dialog .mat-form-field-ripple {
+  background-color: var(--hot-orange) !important;
+}

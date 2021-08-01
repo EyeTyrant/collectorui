@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+:root {
+  --hot-orange: #f86e03;
+  --hot-yellow: #f8cb04;
+  --hot-blue: #0051ff;
+  --hot-blue-tint: #e5edff;
+  --hot-silver: #7d7d7d;
+  --hot-light-silver: #a0a0a0;
+  --hot-charcoal: #343a40;
+  --trans-black8: rgba(0, 0, 0, 0.8);
+  --trans-black5: rgba(0, 0, 0, 0.5);
+  --black: #000;
+  --white: #fff;
+  --test-color: green;
+}
+
+.inputForm {
+  width: 25rem;
+  margin: 10px;
+}
+
+.inputContainer {
+  width: 100%;
+  padding: 5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* input:-internal-autofill-selected {
+  background-color: var(--trans-black5) !important;
+  color: white !important;
+} */
