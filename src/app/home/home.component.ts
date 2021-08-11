@@ -13,7 +13,7 @@ import { LoginFormComponent } from "../login-form/login-form.component";
 export class HomeComponent implements OnInit {
   menuVisible: boolean;
 
-  constructor(private userService: UserService, public dialog: MatDialog) {}
+  constructor(public userService: UserService, public dialog: MatDialog) {}
   // TODO: SHOW MENU LINK ON HOMEPAGE ONLY IF USER IS LOGGED IN
 
   ngOnInit() {

@@ -34,7 +34,7 @@ export class RegistrationFormComponent implements OnInit {
     });
   }
 
-  onRegistrationSubmit() {
+  onRegistrationSubmit(any: any) {
     if (this.regForm.valid) {
       this.userService.createUser(this.regForm.value).subscribe(
         (response) => {

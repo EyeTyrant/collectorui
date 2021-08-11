@@ -33,7 +33,7 @@ export class LoginFormComponent implements OnInit {
     });
   }
 
-  onLoginSubmit(): void {
+  onLoginSubmit(any: any): void {
     // if (this.loginForm.valid) {
     this.userService.submitLoginInput(this.loginForm.value).subscribe(
       (data: any) => {

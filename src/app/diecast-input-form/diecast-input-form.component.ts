@@ -44,7 +44,7 @@ export class DieCastInputFormComponent implements OnInit {
     });
   }
 
-  onSubmit() {
+  onSubmit(any: any) {
     if (!this.inputForm.get("id").value) {
       this.createItem();
     } else {
