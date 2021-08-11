@@ -12,8 +12,10 @@ import { FormBuilder } from "@angular/forms";
   providedIn: "root",
 })
 export class CollectorService {
-  private indexUrl = "http://localhost:8080/diecast/index";
-  private collectorListUrl = "http://localhost:8080/diecast/list";
+  // private indexUrl = "http://localhost:8080/diecast/index";
+  private indexUrl = "https://collector-api-1-0.herokuapp.com/diecast/index";
+  // private collectorListUrl = "http://localhost:8080/diecast/list";
+  private collectorListUrl = "https://collector-api-1-0.herokuapp.com//diecast/list";
   private dieCastUrl = `${this.collectorListUrl}`;
   
   

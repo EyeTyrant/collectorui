@@ -7,6 +7,7 @@ import {
 } from "@angular/common/http";
 import { UserService } from "../_services/user.service";
 import { Observable } from "rxjs";
+import { NONE_TYPE } from "@angular/compiler/src/output/output_ast";
 
 @Injectable()
 export class SessionIdInterceptor implements HttpInterceptor {
